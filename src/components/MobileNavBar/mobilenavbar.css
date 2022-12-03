@@ -1,0 +1,92 @@
+.mobileMenuWrapper{
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    height: 115px;
+    width: 100%;
+    background: rgb(25,25,25);
+    background: linear-gradient(90deg, #191919 0%, #272727 51%, #191919 100%);
+}
+
+.mobileNav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menuItemWrapper{
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.listItem{
+    padding: 4px 0px;
+    width: 80px;
+    height: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 12px;
+    margin: 0px 20px;
+}
+
+.listItem i{
+    font-size: 1rem;
+}
+
+.listItem:hover{
+    border-top: 2px solid #00ffff;
+    background-color: rgba(0, 255, 255, 0.217);
+}
+
+.diver hr{
+    opacity: 1;
+    width: 90%;
+    color: #474747;
+    height: 1px;
+    margin: auto;
+}
+
+.menuContact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socialIcons li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 4px;
+    
+}
+
+.socialIcons li i{
+    padding: 5px 5px;
+}
+
+.socialIcons li a{
+    color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.socialIcons li a:hover{
+    background-color: #00ffff;
+    color: #191919;
+}
+
+.contactSection{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+@media only screen and (max-width: 720px){
+    .mobileMenuWrapper{
+        visibility: visible;
+    }
+}

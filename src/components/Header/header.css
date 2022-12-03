@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #303030;
+}
+
+.header{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #191919;
+    position: absolute;
+    overflow: hidden;
+}
+
+.header-logo{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    margin-right: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #00ffff;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #232323;
+    background: linear-gradient(180deg, #232323 0%, #6a6a6a 51%, #232323 100%);
+    border-radius: 50px;
+}
+
+
