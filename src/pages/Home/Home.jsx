@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import sliderInfo from "./sliderInfo";
 import "./slider.css";
 
-
 const Home = ({slides}) => {
     const [current, setCurrent] = useState(0);
     const length = slides.length;

@@ -28,6 +28,7 @@
 
 .slide {
     clip-path: circle(0% at 0 50%);
+    z-index: 1;
 }
 
 .slide.active {

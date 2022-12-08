@@ -2,7 +2,6 @@ import React from "react"
 import Header from "./components/Header/Header"
 import Navbar from "./components/Navbar/Navbar"
 import MobileNavBar from "./components/MobileNavBar/MobileNavBar"
-import Cursor from "./components/CustomCursor/CustomCursor"
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Education from "./pages/Education/Education"
@@ -16,7 +15,6 @@ function App(){
     return(
         <div className="container-fluid">
             <div className="row">
-                <Cursor />
                 <Header />
                 <Navbar />
 
