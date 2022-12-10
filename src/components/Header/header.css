@@ -14,7 +14,15 @@ body{
     padding: 10px 0px;
     background-color: #191919;
     position: absolute;
-    overflow: hidden;
+
+}
+
+.test{
+    max-width: 100%;
+    padding: 10px 0px;
+    background-color: #8b0e0e;
+    position: absolute;
+
 }
 
 .header-logo{
@@ -42,4 +50,8 @@ body{
     border-radius: 50px;
 }
 
-
+@media(width: 547px){
+    .header{
+        width: 100%;
+    }
+}
