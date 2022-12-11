@@ -19,7 +19,7 @@
 
 .menuItemWrapper{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     display: flex;
     font-family: 'Montserrat', sans-serif;
 }
@@ -88,5 +88,35 @@
 @media only screen and (max-width: 720px){
     .mobileMenuWrapper{
         visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .listItem{
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .listItem{
+        width: 40px;
+    }
+
+    .contactSection{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .call-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobileMenuWrapper{
+        height: 150px;
     }
 }
