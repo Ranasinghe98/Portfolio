@@ -7,13 +7,13 @@ const MobileNavBar = () => {
     return(<>
         <div className="mobileMenuWrapper">
             <div className="mobileNav">
-            <div className="menuItemWrapper">
-                <NavLink exact to="/dev.roshitha" className="listItem" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-house"></i><br/><span className="spanListMobile">Home</span></NavLink>
-                <NavLink to="/about" className="listItem" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-circle-info"></i><br/><span className="spanListMobile">About</span></NavLink>
-                <NavLink to="/education" className="listItem" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-graduation-cap"></i><br/><span className="spanListMobile">Education</span></NavLink>
-                <NavLink to="/projects" className="listItem" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-file-code"></i><br/><span className="spanListMobile">Projects</span></NavLink>
-                <hr/>
-            </div>
+                <div className="menuItemWrapper">
+                    <NavLink exact to="/dev.roshitha" className="listItem" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-house"></i><br/><span className="spanListMobile">Home</span></NavLink>
+                    <NavLink to="/about" className="listItem" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-circle-info"></i><br/><span className="spanListMobile">About</span></NavLink>
+                    <NavLink to="/education" className="listItem" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-graduation-cap"></i><br/><span className="spanListMobile">Education</span></NavLink>
+                    <NavLink to="/projects" className="listItem" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-file-code"></i><br/><span className="spanListMobile">Projects</span></NavLink>
+                    <hr/>
+                </div>
             </div>
 
             <div className="diver">

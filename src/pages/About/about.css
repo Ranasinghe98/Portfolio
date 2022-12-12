@@ -303,6 +303,30 @@
 }
 
 @media (max-width: 500px){
+
+    .abtContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 20px 0 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .titleHead h2{
+        text-align: center;
+    }
+
+    .abtSlider{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     .work-img img{
         width: 350px;
         height: 350px;
