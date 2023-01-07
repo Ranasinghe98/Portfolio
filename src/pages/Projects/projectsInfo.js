@@ -39,6 +39,13 @@ const projectsInfo = [
         imgSrc: Booking,
         link: "https://ranasinghe98.github.io/booking-app-ui-React/",
         altText: "booking-app"
+    },
+    {
+        title: "React E-Commerce App",
+        content: "Created UI of E-Commerce app using react included pages and cart",
+        imgSrc: Booking,
+        link: "https://ranasinghe98.github.io/REACT_E_COMMERCE/",
+        altText: "ecommerce-app"
     }
 ]
 

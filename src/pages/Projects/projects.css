@@ -63,6 +63,7 @@
     color: #00ffff;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .project-box p{

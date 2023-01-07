@@ -25,20 +25,16 @@ body{
 }
 
 ::-webkit-scrollbar{
-    width: 15px;
-    margin-right: 20px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track{
     background: #00ffff;
-    border-radius: 50px;
-    margin-right: 20px;
 }
 
 ::-webkit-scrollbar-thumb{
     background: #232323;
     background: linear-gradient(180deg, #232323 0%, #6a6a6a 51%, #232323 100%);
-    border-radius: 50px;
 }
 
 @media(width: 547px){

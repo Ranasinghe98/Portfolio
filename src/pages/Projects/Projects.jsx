@@ -24,7 +24,7 @@ const Projects = () => {
                             <img src={values.imgSrc} alt={values.altText}/>
                             <h3>{values.title}</h3>
                             <p>{values.content}</p>
-                            <a href={values.link} target="_blank" rel="noopener">Open Project</a>
+                            <a href={values.link} target="_blank" rel="noopener noreferrer">Open Project</a>
                         </div>
                     )
                 })}
