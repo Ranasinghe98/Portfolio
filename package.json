@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Ranasinghe98.github.io/dev.roshitha",
+  "homepage": "https://dev-roshitha.github.io/dev.roshitha",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/Ranasinghe98/dev.roshitha.git",
+    "deploy": "gh-pages -d build -r https://github.com/dev-roshitha/dev.roshitha.git",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
