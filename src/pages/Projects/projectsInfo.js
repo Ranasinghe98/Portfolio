@@ -30,21 +30,21 @@ const projectsInfo = [
         title: "React Weather App",
         content: "Custom created weather app using react & open-weather-api ",
         imgSrc: Weather,
-        link: "https://ranasinghe98.github.io/weather-app-react/",
+        link: "https://dev-roshitha.github.io/weather-app-react/",
         altText: "weather-app"
     },
     {
         title: "React Booking App",
         content: "Booking.com UI clone with react",
         imgSrc: Booking,
-        link: "https://ranasinghe98.github.io/booking-app-ui-React/",
+        link: "https://dev-roshitha.github.io/booking-app-ui-React/",
         altText: "booking-app"
     },
     {
         title: "React E-Commerce App",
         content: "Created UI of E-Commerce app using react included pages and cart",
         imgSrc: Booking,
-        link: "https://ranasinghe98.github.io/REACT_E_COMMERCE/",
+        link: "https://dev-roshitha.github.io/REACT_E_COMMERCE/",
         altText: "ecommerce-app"
     }
 ]
