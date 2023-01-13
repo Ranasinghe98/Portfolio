@@ -3,6 +3,7 @@ import dasuniLogo from "../../img/dasuni.png";
 import lakefieldLogo from "../../img/lakefield.jpg";
 import Weather from "../../img/weather.jpg";
 import Booking from "../../img/booking.jpg";
+import EComLogo from "../../img/ecom.jpg"
 
 const projectsInfo = [
     {
@@ -43,7 +44,7 @@ const projectsInfo = [
     {
         title: "React E-Commerce App",
         content: "Created UI of E-Commerce app using react included pages and cart",
-        imgSrc: Booking,
+        imgSrc: EComLogo,
         link: "https://dev-roshitha.github.io/REACT_E_COMMERCE/",
         altText: "ecommerce-app"
     }
