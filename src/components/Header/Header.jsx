@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "../../img/my-logo.png";
+import gsap from "gsap"
 
 import "./header.css";
 
 function Header(){
+
+    useEffect(() => {
+
+        gsap.from('.header', {
+            duration: 1.5,
+            y: "-100",
+            ease: "bounce"
+        })
+
+    }, [])
 
     return(
         <>
