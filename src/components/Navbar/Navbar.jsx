@@ -1,25 +1,15 @@
-import React, {useEffect} from "react"
+import React from "react"
 import "./navbar.css"
 import { NavLink } from "react-router-dom"
-import gsap from "gsap"
 
 
 const Navbar = () => {
 
-    useEffect(() => {
-
-        gsap.from('.navigation', {
-            duration: 2,
-            x: 0,
-            ease: "elastic"
-        })
-
-    },[])
-
-
     function addStyle(){
+        
         const footerDiv = document.querySelector('.side-footer');
         footerDiv.style.visibility = "visible";
+
 
         const spanMenu = document.querySelectorAll('.spanList');
         for(const list of spanMenu){

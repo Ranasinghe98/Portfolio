@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -7,8 +7,24 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import eduImg from "../../img/edu.png";
 import "./education.css";
 import eduAccordion from "./eduList";
+import gsap from "gsap"
 
 const Education = () => {
+
+    useEffect(() => {
+        gsap.from('.edu-img-section', {
+            duration: 1.5,
+            x: -100,
+            ease: "bounce"
+        })
+
+        gsap.from('.edu-content-section', {
+            duration: 1.5,
+            x: 100,
+            ease: "bounce"
+        })
+    },[])
+
     return (
         <>
             <div className="row">
