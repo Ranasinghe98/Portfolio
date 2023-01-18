@@ -14,6 +14,12 @@ function Header(){
             ease: "bounce"
         })
 
+        gsap.from('.header-logo', {
+            duration: 1,
+            opacity: 0,
+            delay: 1
+        })
+
     }, [])
 
     return(
