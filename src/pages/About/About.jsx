@@ -13,27 +13,50 @@ const About  = () => {
 
     useEffect(() => {
 
-        gsap.to(".about-left", {
+        gsap.from(".about-left", {
             scrollTrigger: {
                 trigger: ".about-left",
                 start: "top center",
-                toggleActions: "restart pause reverse none"
+                toggleActions: "restart pause restart none"
             },
-            x: 100,
-            
-            duration: 2
+            x: -300,
+            opacity: 0,
+            duration: 1,
+            ease: "bounce"
+        })
+
+        gsap.from(".about-right", {
+            scrollTrigger: {
+                trigger: ".about-right",
+                start: "top center",
+                toggleActions: "restart pause restart none"
+            },
+            x: 300,
+            opacity: 0,
+            duration: 1,
+            ease: "bounce"
+        })
+
+        gsap.from(".abtSlider", {
+            scrollTrigger: {
+            trigger: ".abtSlider",
+            start: "top center",
+            toggleActions: "restart pause restart none"
+            },
+            opacity: 0,
+            duration: 3
         })
 
     }, [])
 
     return(<>
         <div className="row">
-            <div class="col-md-6 col-lg-6 col-sm-12 abtContent">
+            <div class="col-md-6 col-lg-6 col-sm-12 abtContent about-left">
                 <hr />
                 <h2>About <span className="style-word">Me</span></h2>
                 <p>Hello im Roshitha Ranasinghe and i am a frontend web developer and wordpress web web developer at Brandocean (pvt)ltd. And also im degree holder in bachelor of information technology(BIT) Hons at Lincoln university and HDCS(Higher Diploma in Computer Science) holder at Infortec International Asia Campus(IIAC) and . Interested in web application development  using latest web technologies and frameworks (ReactJS, NodeJS, Mongodb, Bootstrap) I hope  to be a mobile application developer using react native framework in my future. Im also passionate about learn new things quickly. build new products by applying software engineering concepts and hunger to work with cutting-edge technologies.</p>
             </div>
-            <div class="col-md-6 col-lg-6 col-sm-12 abtImage">
+            <div class="col-md-6 col-lg-6 col-sm-12 abtImage about-right">
                 <img src={aboutImg} alt="about" />
             </div>
         </div>
@@ -48,7 +71,7 @@ const About  = () => {
             </div>
         </div>
 
-        <div className="row aboutBoxWrapper">
+        <div className="row aboutBoxWrapper ">
             <div className="about-box about-left col-sm-12 col-md-6 col-lg-6">
                 <img src={webDesign} alt="about-description" />
                 <h3>web design & development</h3>
@@ -70,7 +93,7 @@ const About  = () => {
         </div>
 
 
-        <div className=" row about-slider-wrapper">
+        <div className=" row about-slider-wrapper abtSlider">
             <div className="col-sm-12 col-md-6 col-lg-6 about-slider">
                     <div className="slide-track">
                         {aboutSlider.map((values)=>{

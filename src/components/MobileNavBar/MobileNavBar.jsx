@@ -22,11 +22,11 @@ const MobileNavBar = () => {
 
             <div className="menuContact">
                 <div className="socialIcons">
-                    <li><a href="https://www.linkedin.com/in/roshitha-ranasinghe-962482189/" rel="noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/https.roshitha/" rel="noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/roshitha-ranasinghe/" rel="noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/dev.roshitha/" rel="noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="https://twitter.com/RoshithaRana" rel="noreferrer" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href="https://wa.me/+94703639744" rel="noreferrer" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-                    <li><a href="https://github.com/Ranasinghe98" rel="noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://github.com/dev-roshitha" rel="noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                     <li><a href="mailto:sajithroshitha98@gmail.com" rel="noreferrer" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
                 </div>
 
