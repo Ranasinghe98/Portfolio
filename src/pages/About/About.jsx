@@ -37,6 +37,17 @@ const About  = () => {
             ease: "bounce"
         })
 
+        gsap.from(".about-wrapper", {
+            scrollTrigger: {
+                trigger: ".about-wrapper",
+                start: "top center",
+                toggleActions: "restart pause restart none"
+            },
+            x: -200,
+            duration: 1,
+            ease: "bounce",
+        })
+
         gsap.from(".abtSlider", {
             scrollTrigger: {
             trigger: ".abtSlider",
@@ -65,19 +76,19 @@ const About  = () => {
 
 
         <div className="row">
-            <div className="col-12 contentTitle titleHead">
+            <div className="col-12 contentTitle titleHead about-wrapper">
                 <hr/>
                 <h2>I'm <span className="style-word">flexible</span> with these</h2>
             </div>
         </div>
 
-        <div className="row aboutBoxWrapper ">
-            <div className="about-box about-left col-sm-12 col-md-6 col-lg-6">
+        <div className="row aboutBoxWrapper about-wrapper">
+            <div className="about-box col-sm-12 col-md-6 col-lg-6">
                 <img src={webDesign} alt="about-description" />
                 <h3>web design & development</h3>
                 <p>Design very unique and striking latest UX/UI technologies. And i can create amazing website for your business with having beautiful user friendly interfaces.</p>
             </div>
-            <div className="about-box about-right col-sm-12 col-md-6 col-lg-6">
+            <div className="about-box col-sm-12 col-md-6 col-lg-6">
                 <img src={webDeveloping} alt="about-description" />
                 <h3>web application development</h3>
                 <p>Design and develop fully Integrated web based application for in your organization with using cutting-edge technologies.</p>
