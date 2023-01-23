@@ -1,8 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import sliderInfo from "./sliderInfo";
 import "./slider.css";
+import gsap from "gsap"
 
 const Home = ({slides}) => {
+
+    useEffect(() => {
+
+        gsap.from(".sliderWrapper", {
+            y: 200,
+            opacity: 1,
+            duration: 2,
+            ease: "bounce"
+        })
+    }, [])
+
+
     const [current, setCurrent] = useState(0);
     const length = slides.length;
 

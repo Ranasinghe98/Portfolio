@@ -10,23 +10,28 @@ const Projects = () => {
 
     useEffect(() => {
 
+        gsap.from(".projects-box-wrapper", {
+            duration: 1
+        })
+
         gsap.from(".pro-box", {
             scrollTrigger: {
                 trigger: ".pro-box",
                 start: "top center",
                 toggleActions: "restart pause restart none",
             },
-            y: 100,
-            duration: 1
+            
+            duration: 1,
+            opacity: 0,
+            // ease: "bounce"
         })
-
     }, [])
 
     return(
         <>
         
-            <div className="row">
-                <div className="col-12 projectTitle pro-box">
+            <div className="row pro-box">
+                <div className="col-12 projectTitle">
                     <hr/>
                     <h2>Recent <span className="style-word">Projects</span></h2>
                 </div>
@@ -34,14 +39,16 @@ const Projects = () => {
             
 
 
-            <div className="row projects-box-wrapper pro-box">
+            <div className="row projects-box-wrapper ">
                 {projectsInfo.map((values)=>{
                     return(
-                        <div className="col-sm-12 col-md-4 col-lg-4 project-box">
-                            <img src={values.imgSrc} alt={values.altText}/>
+                        <div className="col-sm-12 col-md-4 col-lg-4 project-box pro-box">
+                            <img className="box-img" src={values.imgSrc} alt={values.altText}/>
                             <h3>{values.title}</h3>
                             <p>{values.content}</p>
-                            <a href={values.link} target="_blank" rel="noopener noreferrer">Open Project</a>
+                            <a href={values.link} target="_blank" rel="noopener noreferrer">
+                                Open Project
+                            </a>
                         </div>
                     )
                 })}
