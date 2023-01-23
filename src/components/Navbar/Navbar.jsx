@@ -1,9 +1,21 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./navbar.css"
 import { NavLink } from "react-router-dom"
+import gsap from "gsap"
 
 
 const Navbar = () => {
+
+    useEffect(() => {
+
+        gsap.from(".navigation", {
+            x: -300,
+            duration: 1,
+            ease: "bounce",
+            opacity: 0
+        })
+
+    }, [])
 
     function addStyle(){
         
