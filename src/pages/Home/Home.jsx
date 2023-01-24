@@ -7,6 +7,12 @@ const Home = ({slides}) => {
 
     useEffect(() => {
 
+        document.title = "Home | Dev Roshitha"
+
+    }, [])
+
+    useEffect(() => {
+
         gsap.from(".sliderWrapper", {
             y: 200,
             opacity: 1,
