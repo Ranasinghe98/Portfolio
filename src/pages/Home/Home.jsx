@@ -7,7 +7,7 @@ const Home = ({slides}) => {
 
     useEffect(() => {
 
-        document.title = "Home | Dev Roshitha"
+        document.title = "Portfolio | Dev Roshitha"
 
     }, [])
 

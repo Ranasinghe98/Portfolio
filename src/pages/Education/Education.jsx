@@ -12,6 +12,12 @@ import gsap from "gsap"
 const Education = () => {
 
     useEffect(() => {
+
+        document.title = "Education | Dev Roshitha"
+
+    }, [])
+
+    useEffect(() => {
         gsap.from('.edu-img-section', {
             duration: 1.5,
             x: -100,
