@@ -56,16 +56,16 @@ const About  = () => {
             transition: 0.5,
         })
 
-        // gsap.from(".about-right-box", {
-        //     scrollTrigger: {
-        //         trigger: ".about-right-box",
-        //         start: "top center",
-        //         toggleActions: "restart pause restart none"
-        //     },
-        //     x: 700,
-        //     duration: 1,
-        //     ease: "bounce",
-        // })
+        gsap.from(".about-right-box", {
+            scrollTrigger: {
+                trigger: ".about-right-box",
+                start: "top center",
+                toggleActions: "restart pause restart none"
+            },
+            x: 700,
+            duration: 1,
+            ease: "bounce",
+        })
 
         gsap.from(".abtSlider", {
             scrollTrigger: {
