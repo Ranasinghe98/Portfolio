@@ -94,7 +94,7 @@
     border-radius: 20px;
     border-bottom: 3px solid #00ffff;
     box-shadow: 0px 0px 10px 5px #171717;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 .about-box:hover{
