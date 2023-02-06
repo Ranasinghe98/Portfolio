@@ -159,16 +159,26 @@ const About  = () => {
                 <div className="container left-container">
                     <div className="text-box">
                         <h3>BrandOcean(Pvt)Ltd</h3>
-                        <small>2022 - 2023</small>
-                        <p>The success of every websites depends on search engine optimisation and digital marketing strategy. If you are on first page of all major search</p>
+                        <small>2021 - 2022</small>
+                        <p>(01 year 06 month) – Have strong experience in WordPress web
+                            design and development (including one e-commerce website
+                            with Elementor page builder) Designed and developed
+                            responsive websites using WordPress and Elementor page
+                            builder.
+                        </p>
                     </div>
                 </div>
 
                 <div className="container right-container">
                     <div className="text-box">
-                        <h3>BrandOcean(Pvt)Ltd</h3>
-                        <small>2022 - 2023</small>
-                        <p>The success of every websites depends on search engine optimisation and digital marketing strategy. If you are on first page of all major search</p>
+                        <h3>Circlebook(Pvt)Ltd</h3>
+                        <small>2022</small>
+                        <p>(05-Month) – Successfully completed internship program at
+                            circlebook(Pvt)Ltd as a WordPress web developer and software
+                            developer. During internship I’ve created WordPress websites
+                            using elementor and divi page builders. And also I’ve created
+                            invoice generator mobile app UI using react-native.
+                        </p>
                     </div>
                 </div>
             </div>
