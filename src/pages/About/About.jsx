@@ -146,13 +146,30 @@ const About  = () => {
         </div>
 
         <div className="row work-ex-wrapper">
-            <div className="work-img col-sm-12 col-md-6 col-lg-6">
+            {/* <div className="work-img col-sm-12 col-md-6 col-lg-6">
                 <img src={workImg} alt="" />
             </div>
             <div className="work-content col-sm-12 col-md-6 col-lg-6">
                 <div className="workInnerContent">
                     <h2>BrandOcean(pvt)Ltd.</h2>
                     <p>My current job role is Wordpress web developer at BrandOcean(pvt)Ltd from 2021 to Present</p>
+                </div>
+            </div> */}
+            <div className="col-sm-12 col-md-12 col-lg-12 timeline">
+                <div className="container left-container">
+                    <div className="text-box">
+                        <h3>BrandOcean(Pvt)Ltd</h3>
+                        <small>2022 - 2023</small>
+                        <p>The success of every websites depends on search engine optimisation and digital marketing strategy. If you are on first page of all major search</p>
+                    </div>
+                </div>
+
+                <div className="container right-container">
+                    <div className="text-box">
+                        <h3>BrandOcean(Pvt)Ltd</h3>
+                        <small>2022 - 2023</small>
+                        <p>The success of every websites depends on search engine optimisation and digital marketing strategy. If you are on first page of all major search</p>
+                    </div>
                 </div>
             </div>
         </div>
