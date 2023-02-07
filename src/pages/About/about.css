@@ -348,6 +348,18 @@
     .abtContent{
         align-items:center;
     }
+
+    .left-box{
+        border: 1px solid #00ffff;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-box{
+        border: 1px solid #00ffff;
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 500px){
