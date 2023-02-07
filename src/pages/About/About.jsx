@@ -77,6 +77,30 @@ const About  = () => {
             duration: 3
         })
 
+        gsap.from(".left-box",{
+            scrollTrigger: {
+                trigger: ".left-box",
+                start: "top center",
+                toggleActions: "restart pause restart none"
+            },
+            opacity: 0,
+            duration: 1.5,
+            x: -300,
+            ease: "bounce"
+        })
+
+        gsap.from(".right-box",{
+            scrollTrigger: {
+                trigger: ".right-box",
+                start: "top center",
+                toggleActions: "restart pause restart none"
+            },
+            opacity: 0,
+            duration: 1.5,
+            x: 300,
+            ease: "bounce"
+        })
+
     }, [])
 
     return(<>
@@ -157,7 +181,7 @@ const About  = () => {
             </div> */}
             <div className="col-sm-12 col-md-12 col-lg-12 timeline">
                 <div className="container left-container">
-                    <div className="text-box">
+                    <div className="text-box left-box">
                         <h3>BrandOcean(Pvt)Ltd</h3>
                         <small>2021 - 2022</small>
                         <p>(01 year 06 month) – Have strong experience in WordPress web
@@ -170,10 +194,10 @@ const About  = () => {
                 </div>
 
                 <div className="container right-container">
-                    <div className="text-box">
+                    <div className="text-box right-box">
                         <h3>Circlebook(Pvt)Ltd</h3>
                         <small>2022</small>
-                        <p>(05-Month) – Successfully completed internship program at
+                        <p>(06-Month) – Successfully completed internship program at
                             circlebook(Pvt)Ltd as a WordPress web developer and software
                             developer. During internship I’ve created WordPress websites
                             using elementor and divi page builders. And also I’ve created

@@ -279,30 +279,46 @@
     max-width: 1200px;
     width: 100%;
     margin: 100px auto;
+    overflow-x: hidden;
 }
 
-.container{
-    padding: 10px 50px;
-    width: 50%;
-    background-color: #000000;
-    /* position: relative; */
-}
+
 
 .text-box{
     padding: 20px 30px;
-    background-color: #fff;
-    border-radius: 6px;
+    background-color: #1f1f1f;
     font-size: 15px;
-    /* position: relative; */
+    width: 50%;
+    border: 0px 1px 0px  solid #00ffff;
+    overflow-x: hidden;
 }
 
-/* .left-container{
-    left: 0;
+.text-box p, h3, small{
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-.right-container{
-    left: 50%;
-} */
+.text-box h3{
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.text-box small{
+    color: #00ffff;
+    font-size: 1.5rem;
+}
+
+.left-box{
+    border: solid #00ffff;
+    border-width: 0px 2px 0px 0px;
+}
+
+.right-box{
+    margin-left: 49.9%;
+    border: solid #00ffff;
+    border-width: 0px 0px 0px 2px;
+}
+
+
 
 /*============================= Media Queries ==========================*/
 
