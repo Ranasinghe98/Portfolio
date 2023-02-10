@@ -189,9 +189,7 @@ const About  = () => {
                         <h3>Circlebook(Pvt)Ltd</h3>
                         <small>2022</small>
                         <p>(06-Month) – Successfully completed internship program at
-                            circlebook(Pvt)Ltd as a WordPress web developer and software
-                            developer. During internship I’ve created WordPress websites
-                            using elementor and divi page builders. And also I’ve created
+                            circlebook(Pvt)Ltd as a WordPress web developer and react-native frontend developer. During internship I’ve created WordPress websites using elementor and DIVI page builders. And also I’ve created
                             invoice generator mobile app UI using react-native.
                         </p>
                     </div>
