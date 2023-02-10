@@ -170,15 +170,6 @@ const About  = () => {
         </div>
 
         <div className="row work-ex-wrapper">
-            {/* <div className="work-img col-sm-12 col-md-6 col-lg-6">
-                <img src={workImg} alt="" />
-            </div>
-            <div className="work-content col-sm-12 col-md-6 col-lg-6">
-                <div className="workInnerContent">
-                    <h2>BrandOcean(pvt)Ltd.</h2>
-                    <p>My current job role is Wordpress web developer at BrandOcean(pvt)Ltd from 2021 to Present</p>
-                </div>
-            </div> */}
             <div className="col-sm-12 col-md-12 col-lg-12 timeline">
                 <div className="container left-container">
                     <div className="text-box left-box">
