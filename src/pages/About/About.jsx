@@ -4,7 +4,6 @@ import "./about.css";
 import aboutImg from "../../img/about-img.png"
 import webDesign from "../../img/design.png"
 import webDeveloping from "../../img/developing.png"
-import workImg from "../../img/work-ex.png"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/src/ScrollTrigger"
 
