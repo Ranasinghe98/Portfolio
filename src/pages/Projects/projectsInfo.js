@@ -28,21 +28,21 @@ const projectsInfo = [
         altText: "lakefield"
     },
     {
-        title: "React Weather App",
+        title: "Weather App | React",
         content: "Custom created weather app using react & open-weather-api ",
         imgSrc: Weather,
         link: "https://dev-roshitha.github.io/weather-app-react/",
         altText: "weather-app"
     },
     {
-        title: "React Booking App",
+        title: "Booking.com App | React",
         content: "Booking.com UI clone with react",
         imgSrc: Booking,
         link: "https://dev-roshitha.github.io/booking-app-ui-React/",
         altText: "booking-app"
     },
     {
-        title: "React E-Commerce App",
+        title: "E-Commerce App | React",
         content: "Created UI of E-Commerce app using react included pages and cart",
         imgSrc: EComLogo,
         link: "https://dev-roshitha.github.io/REACT_E_COMMERCE/",
