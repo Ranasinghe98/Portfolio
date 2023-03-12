@@ -52,9 +52,9 @@ const projectsInfo = [
     {
         title: "Social Authentication App | React",
         content: "Created social authentication app using ReactJS, PassportJS ",
-        imgSrc: EComLogo,
-        link: "https://dev-roshitha.github.io/REACT_E_COMMERCE/",
-        altText: "ecommerce-app"
+        imgSrc: Authentication,
+        link: "https://github.com/dev-roshitha/google-auth-login",
+        altText: "auth-app"
     }
 ]
 
