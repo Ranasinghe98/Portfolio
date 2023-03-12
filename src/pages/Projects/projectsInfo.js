@@ -4,6 +4,7 @@ import lakefieldLogo from "../../img/lakefield.jpg";
 import Weather from "../../img/weather.jpg";
 import Booking from "../../img/booking.jpg";
 import EComLogo from "../../img/ecom.jpg"
+import Authentication from "../../img/auth.jpg"
 
 const projectsInfo = [
     {
@@ -44,6 +45,13 @@ const projectsInfo = [
     {
         title: "E-Commerce App | React",
         content: "Created UI of E-Commerce app using react included pages and cart",
+        imgSrc: EComLogo,
+        link: "https://dev-roshitha.github.io/REACT_E_COMMERCE/",
+        altText: "ecommerce-app"
+    },
+    {
+        title: "Social Authentication App | React",
+        content: "Created social authentication app using ReactJS, PassportJS ",
         imgSrc: EComLogo,
         link: "https://dev-roshitha.github.io/REACT_E_COMMERCE/",
         altText: "ecommerce-app"
