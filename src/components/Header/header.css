@@ -9,6 +9,12 @@ body{
     overflow-x: hidden;
 }
 
+::selection{
+    font-weight: bold;
+    color: #191919;
+    background-color: #00ffff;
+}
+
 .header{
     width: 100%;
     padding: 10px 0px;
