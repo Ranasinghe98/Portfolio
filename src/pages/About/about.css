@@ -318,10 +318,26 @@
         width: 100%;
         margin-left: 0;
     }
+
+    .aboutBoxWrapper{
+        flex-direction: column;
+    }
+    .about-left-box,
+    .about-right-box{
+        width: 100%;
+        height: max-content;
+    }
+
+    .about-top-section{
+        padding-left: 0;
+    }
+
+    .abtImage img{
+        width: 350px;
+    }
 }
 
 @media (max-width: 500px){
-
     .abtContent{
         display: flex;
         justify-content: center;
@@ -359,5 +375,11 @@
 
     .work-content{
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        background-color: red;
     }
 }

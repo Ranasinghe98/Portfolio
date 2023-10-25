@@ -20,7 +20,7 @@ const Navbar = () => {
     function addStyle(){
         
         const footerDiv = document.querySelector('.side-footer');
-        footerDiv.style.visibility = "visible";
+        footerDiv.style.display = "block";
 
 
         const spanMenu = document.querySelectorAll('.spanList');
@@ -34,7 +34,7 @@ const Navbar = () => {
 
     function removeStyle(){
         const footerDiv = document.querySelector('.side-footer');
-        footerDiv.style.visibility = "hidden";
+        footerDiv.style.display = "none";
 
         const spanMenu = document.querySelectorAll('.spanList');
         for(const list of spanMenu){

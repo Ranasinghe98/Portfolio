@@ -9,17 +9,17 @@ import ScrollTrigger from "gsap/src/ScrollTrigger"
 
 const About  = () => {
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        document.title = "About | Dev Roshitha"
+    //     document.title = "About | Dev Roshitha"
 
-    }, [])
+    // }, [])
 
-    gsap.registerPlugin(ScrollTrigger)
+    // gsap.registerPlugin(ScrollTrigger)
 
-    useEffect(() => {
+    // useEffect(() => {
 
-    }, [])
+    // }, [])
 
     return(<>
         <div className="about-top-section">
@@ -52,7 +52,7 @@ const About  = () => {
         </div>
 
 
-            <div className=" abtSlider titleHead">
+            {/* <div className=" abtSlider titleHead">
                 <hr/>
                 <h2>My <span className="style-word">Technologies</span></h2>
             </div>
@@ -70,7 +70,7 @@ const About  = () => {
                     })}
                 </div>
             </div>
-        </div>
+        </div> */}
 
             <div className="contentTitle titleHead">
                 <hr/>
