@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import aboutSlider from "./aboutSlides"
+//import aboutSlider from "./aboutSlides"
 import "./about.css";
 import aboutImg from "../../img/about-img.png"
 import webDesign from "../../img/design.png"
 import webDeveloping from "../../img/developing.png"
-import gsap from "gsap"
-import ScrollTrigger from "gsap/src/ScrollTrigger"
+//import gsap from "gsap"
+//import ScrollTrigger from "gsap/src/ScrollTrigger"
 
 const About  = () => {
 
@@ -99,6 +99,18 @@ const About  = () => {
                         <p>(06-Month) – Successfully completed internship program at
                             circlebook(Pvt)Ltd as a WordPress web developer and react-native frontend developer. During internship I’ve created WordPress websites using elementor and DIVI page builders. And also I’ve created
                             invoice generator mobile app UI using react-native.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="container left-container">
+                    <div className="text-box left-box">
+                        <h3>Ebeyonds(Pvt)Ltd</h3>
+                        <small>2023 - Present</small>
+                        <p> I’ve joined as associate web and
+                            gained my experience in front-end development with HTML SASS
+                            javascript and trained to create re-usable components on their
+                            web projects.
                         </p>
                     </div>
                 </div>

@@ -281,6 +281,21 @@
     .abtImage{
         width: 100%;
     }
+
+    .left-box{
+        border: 1px solid #00ffff;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-box{
+        border: 1px solid #00ffff;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .timeline{
+        margin: 80px auto 130px auto;
+    }
 }
 
 
@@ -306,19 +321,6 @@
     .abtContent{
         align-items:center;
     }
-
-    .left-box{
-        border: 1px solid #00ffff;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .right-box{
-        border: 1px solid #00ffff;
-        width: 100%;
-        margin-left: 0;
-    }
-
     .aboutBoxWrapper{
         flex-direction: column;
     }
