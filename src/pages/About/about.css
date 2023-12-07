@@ -37,7 +37,8 @@
 .abtContent hr{
     opacity: 1;
     width: 100px;
-    color: #ae23f9;
+    /* color: #ae23f9; */
+    color: red;
     height: 4px;
 }
 
