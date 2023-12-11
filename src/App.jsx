@@ -9,6 +9,7 @@ import Projects from "./pages/Projects/Projects"
 import sliderInfo from "./pages/Home/sliderInfo"
 import { Route, Routes} from "react-router-dom"
 import Snowfall from 'react-snowfall'
+import "./sass/main.scss"
 
 
 
