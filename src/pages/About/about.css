@@ -1,62 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@197&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@197&family=Montserrat:wght@500&display=swap'); */
 
-.about-top-section{
-    margin-top: 80px;
-    padding-left: 100px;
-    display: flex;
-}
-
-.abtContent{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow-x: hidden;
-    width: 45%;
-}
-
-.abtContent h2, p{
-    color: #fff;
-}
-
-.abtContent h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.abtContent p{
-    font-family: 'Lexend Deca', sans-serif;
-    line-height: 25px;
-    padding-top: 20px;
-    letter-spacing: 1px;
-}
-
-.abtContent hr{
-    opacity: 1;
-    width: 100px;
-    color: #ae23f9;
-    height: 4px;
-}
-
-.style-word{
-    color: #00ffff;
-}
-
-.abtImage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-    width: 45%;
-}
-
-.abtImage img{
-    width: 600px;
-}
-
 
 .contentTitle{
     display: flex;
@@ -272,16 +216,6 @@
 /*============================= Media Queries ==========================*/
 
 @media (max-width: 992px){
-    .about-top-section{
-        flex-direction: column;
-    }
-    .abtContent{
-        width: 100%;
-    }
-    .abtImage{
-        width: 100%;
-    }
-
     .left-box{
         border: 1px solid #00ffff;
         width: 100%;
@@ -300,11 +234,6 @@
 
 
 @media (max-width: 720px){
-    .abtContent{
-        align-items: left;
-        padding-top: 100px;
-    }
-
     .aboutBoxWrapper{
         padding: 3rem 0rem;
     }
@@ -317,39 +246,15 @@
     .work-content{
         padding-bottom: 130px;
     }
-
-    .abtContent{
-        align-items:center;
-    }
     .aboutBoxWrapper{
         flex-direction: column;
     }
-    .about-left-box,
-    .about-right-box{
-        width: 100%;
-        height: max-content;
-    }
-
     .about-top-section{
         padding-left: 0;
-    }
-
-    .abtImage img{
-        width: 350px;
     }
 }
 
 @media (max-width: 500px){
-    .abtContent{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 100px 20px 0 20px;
-        text-align: center;
-        width: 100%;
-    }
-
     .titleHead h2{
         text-align: center;
     }
@@ -377,11 +282,5 @@
 
     .work-content{
         margin-top: 50px;
-    }
-}
-
-@media (max-width: 375px){
-    body{
-        background-color: red;
     }
 }
