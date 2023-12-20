@@ -1,3 +1,7 @@
+// Common
+@import "./mixins";
+@import "./common/common";
+
 // Pages 
 @import "./pages/about";
 @import "./pages/education";
@@ -8,3 +12,4 @@
 @import "./components/header";
 @import "./components/nav-bar";
 @import "./components/mobile-nav-bar";
+@import "./components/about-intro";
