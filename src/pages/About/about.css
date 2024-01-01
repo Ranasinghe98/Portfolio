@@ -26,50 +26,6 @@
     height: 4px;
 }
 
-.aboutBoxWrapper{
-    margin: auto;
-    width: 90%;
-    display: flex;
-    padding: 5rem 0rem;
-}
-
-.about-box{
-    background-color: #232323;
-    width: 450px;
-    height: 400px;
-    margin: 50px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 20px;
-    border-radius: 20px;
-    border-bottom: 3px solid #00ffff;
-    box-shadow: 0px 0px 10px 5px #171717;
-    /* transition: 0.3s; */
-}
-
-.about-box:hover{
-    box-shadow: 0px 0px 10px 10px #171717;
-}
-
-.about-box img{
-    filter: invert(100%);
-    margin-bottom: 20px;
-}
-
-.about-box h3{
-    color: #00ffff;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: capitalize;
-}
-
-.about-box p{
-    color: #fff;
-    font-family: 'Lexend Deca', sans-serif;
-    letter-spacing: 1px;
-}
 
 
 /*============================= About Slider Css========================== */
