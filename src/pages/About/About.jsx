@@ -51,27 +51,6 @@ const About  = () => {
             </div>
         </div>
 
-
-            {/* <div className=" abtSlider titleHead">
-                <hr/>
-                <h2>My <span className="style-word">Technologies</span></h2>
-            </div>
-
-
-        <div className="about-slider-wrapper abtSlider">
-            <div className="about-slider">
-                <div className="slide-track">
-                    {aboutSlider.map((values)=>{
-                        return(
-                        <div className="slide-image">
-                            <img src={values.slide} height="200" width="200" alt="" />
-                        </div>
-                        );
-                    })}
-                </div>
-            </div>
-        </div> */}
-
             <div className="contentTitle titleHead">
                 <hr className="title-line"/>
                 <h2><span className="style-word">Work</span> Experience</h2>

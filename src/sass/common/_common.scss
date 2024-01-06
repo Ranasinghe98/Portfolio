@@ -9,3 +9,38 @@
     margin: 10px 0;
   }
 }
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  span{
+    color: #00ffff;
+  }
+}
+
+p{
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 200;
+  @include desktop{
+    font-size: 16px;
+  }
+}
+
+.contentTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+  @include tablet-portrait{
+    width: 90%;
+    margin-left: auto;
+  }
+}
