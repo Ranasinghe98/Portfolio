@@ -6,29 +6,27 @@ import "./header.css";
 
 function Header(){
 
-    useEffect(() => {
+  useEffect(() => {
 
-        gsap.from('.header', {
-            duration: 1.5,
-            y: "-100",
-            ease: "bounce"
-        })
+    gsap.from('.header', {
+      duration: 1.5,
+      y: "-100",
+      ease: "bounce"
+    })
 
-        gsap.from('.header-logo', {
-            duration: 1,
-            opacity: 0,
-            delay: 1
-        })
+    gsap.from('.header-logo', {
+      duration: 1,
+      opacity: 0,
+      delay: 1
+    })
 
-    }, [])
+  }, [])
 
-    return(
-        <>
-            <div className="col-12 col-md-12 col-sm-12 col-xs-12 header">
-                <img alt="logo" src={Logo} className="header-logo" />
-            </div>
-        </>
-        )
+  return(
+    <header className="header">
+      <img alt="logo" src={Logo} className="header-logo" />
+    </header>
+    )
 }
 
 export default Header
