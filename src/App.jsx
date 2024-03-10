@@ -8,15 +8,15 @@ import Education from "./pages/Education/Education"
 import Projects from "./pages/Projects/Projects"
 import sliderInfo from "./pages/Home/sliderInfo"
 import { Route, Routes} from "react-router-dom"
-import Snowfall from 'react-snowfall'
+//import Snowfall from 'react-snowfall'
 import "./sass/main.scss"
 
 
 
 function App(){
     return(
-        <div className="container-fluid">
-            <div className="row">
+        <div className="app-wrapper">
+            <div className="app-inner">
                 {/* <Snowfall />  */}
                 <Header />
                 <Navbar />

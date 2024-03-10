@@ -1,3 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #303030;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+::selection{
+  font-weight: bold;
+  color: #191919;
+  background-color: #00ffff;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #00ffff;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #232323;
+  background: linear-gradient(180deg, #232323 0%, #6a6a6a 51%, #232323 100%);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
 .title-line{
   opacity: 1;

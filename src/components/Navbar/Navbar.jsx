@@ -3,59 +3,56 @@ import "./navbar.css"
 import { NavLink } from "react-router-dom"
 import gsap from "gsap"
 
-
 const Navbar = () => {
 
   useEffect(() => {
-
   gsap.from(".navigation", {
     x: -300,
     duration: 1,
     ease: "bounce",
     opacity: 0
   })
-
-
-
   }, [])
 
   function addStyle(){
-    const footerDiv = document.querySelector('.side-footer');
-    footerDiv.style.display = "block";
-
-
-    const spanMenu = document.querySelectorAll('.spanList');
-    for(const list of spanMenu){
-      list.classList.add('styled');
-    }
-    
     const navDiv = document.querySelector('.navigation');
-    navDiv.classList.add('spanNav');
+    navDiv.classList.add('span-nav');
   }
 
   function removeStyle(){
-    const footerDiv = document.querySelector('.side-footer');
-    footerDiv.style.display = "none";
-
-    const spanMenu = document.querySelectorAll('.spanList');
-    for(const list of spanMenu){
-      list.classList.remove('styled');
-    }
-
     const navDiv = document.querySelector('.navigation');
-    navDiv.classList.remove('spanNav');
+    navDiv.classList.remove('span-nav');
   }
 
-
   return(<>
-
-    {/* <div className="row"> */}
-      <div className="col-3 navigation" id="naviSpan" onMouseOver={addStyle} onMouseOut={removeStyle}>
+      <div className="navigation" id="naviSpan" onMouseOver={addStyle} onMouseOut={removeStyle}>
         <div className="inner-navigation">
-          <NavLink exact to="/dev.roshitha" className="listItems" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-house"></i><span className="spanList">Home</span></NavLink>
-          <NavLink to="/about" className="listItems" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-circle-info"></i><span className="spanList">About</span></NavLink>
-          <NavLink to="/education" className="listItems" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-graduation-cap"></i><span className="spanList">Education</span></NavLink>
-          <NavLink to="/projects" className="listItems" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-file-code"></i><span className="spanList">Projects</span></NavLink>
+          <ul className="links">
+            <li className="link">
+              <NavLink exact to="/dev.roshitha" className="listItems" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}>
+                <i class="fa-solid fa-house"></i>
+                <span className="spanList">Home</span>
+              </NavLink>
+            </li>
+            <li className="link">
+              <NavLink to="/about" className="listItems" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}>
+                <i class="fa-solid fa-circle-info"></i>
+                <span className="spanList">About</span>
+              </NavLink>
+            </li>
+            <li className="link">
+              <NavLink to="/education" className="listItems" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span className="spanList">Education</span>
+              </NavLink>
+            </li>
+            <li className="link">
+              <NavLink to="/projects" className="listItems" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}>
+                <i class="fa-solid fa-file-code"></i>
+                <span className="spanList">Projects</span>
+              </NavLink>
+            </li>
+          </ul>
           {/* <NavLink to="/contact" className="listItems" style={({ isActive }) => ({color: isActive ? '#00ffff87' : '#faebd7'})}><i class="fa-solid fa-address-book"></i><span className="spanList">Contact</span></NavLink> */}
         </div>
 
@@ -75,7 +72,6 @@ const Navbar = () => {
             <p className="footer-text">Copyrights 2022 | Dev Roshitha</p>
         </div>
       </div>
-    {/* </div> */}
   </>)
 }
 
