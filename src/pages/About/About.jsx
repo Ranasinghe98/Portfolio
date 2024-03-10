@@ -21,12 +21,12 @@ const About  = () => {
 
     return(<>
         <div className="about-top-section">
-            <div class="abtContent about-left">
+            <div className="abtContent about-left">
                 <hr className="title-line"/>
                 <h2 className="light-heading">About <span className="style-word">Me</span></h2>
                 <p>Hello im Roshitha Ranasinghe and i am a frontend web developer and wordpress web web developer at Brandocean (pvt)ltd. And also im degree holder in bachelor of information technology(BIT) Hons at Lincoln university and HDCS(Higher Diploma in Computer Science) holder at Infortec International Asia Campus(IIAC) and . Interested in web application development  using latest web technologies and frameworks (ReactJS, NodeJS, Mongodb, Bootstrap) I hope  to be a mobile application developer using react native framework in my future. Im also passionate about learn new things quickly. build new products by applying software engineering concepts and hunger to work with cutting-edge technologies.</p>
             </div>
-            <div class="abtImage about-right">
+            <div className="abtImage about-right">
                 <img src={aboutImg} alt="about" />
             </div>
         </div>
