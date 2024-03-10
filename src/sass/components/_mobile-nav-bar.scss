@@ -1,0 +1,105 @@
+.mobileMenuWrapper{
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 115px;
+  width: 100%;
+  background: rgb(25,25,25);
+  background: linear-gradient(90deg, #191919 0%, #272727 51%, #191919 100%);
+  .mobileNav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .menuItemWrapper{
+      text-align: center;
+      padding-top: 15px;
+      display: flex;
+      font-family: 'Montserrat', sans-serif;
+      width: 100%;
+      justify-content: space-evenly;
+      .listItem{
+        padding: 6px 0px;
+        text-decoration: none;
+        transition: 0.3s;
+        border-radius: 0px 0px 5px 5px;
+        font-size: 12px;
+        color: #faebd7;
+        &.active{
+          color: #00ffff87;
+        }
+        &:hover{
+          border-top: 2px solid #00ffff;
+        }
+        i{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  .diver{
+    hr{
+      opacity: 1;
+      width: 90%;
+      color: #474747;
+      height: 1px;
+      margin: auto;
+    }
+  }
+  .menuContact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-block-start: 5px;
+    .socialIcons{
+      li{
+        list-style: none;
+        display: inline-block;
+        margin: 0px 4px;
+        i{
+          padding: 5px 5px;
+        }
+        a{
+          color: white;
+          transition: 0.3s;
+          border-radius: 10px;
+          &:hover{
+            background-color: #00ffff;
+            color: #191919;
+          }
+        }
+      }
+    }
+    .contactSection{
+      font-family: 'Lexend Deca', sans-serif;
+      .call-box{
+        a{
+          text-decoration: none;
+          font-size: 14px;
+          color: #faebd7;
+          transition: 0.4s;
+          letter-spacing: 1px;
+          &:hover{
+            color: #00e5ff88;
+          }
+          i{
+            font-size: 14px;
+            color: #faebd7;
+            animation: CallIcon 1s linear infinite;
+            @keyframes CallIcon{
+              0%  {transform: rotate(20deg);}
+              25%  {transform: rotate(-20deg);}
+              50%  {transform: rotate(20deg);}
+              75%  {transform: rotate(-20deg);}
+              100% {transform: rotate(20deg);}
+            }
+          }
+        }
+      }
+    }
+  }
+  @include tablet-portrait{
+    display: none;
+  }
+}
