@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-import "./navbar.css"
 import { NavLink } from "react-router-dom"
 import gsap from "gsap"
 

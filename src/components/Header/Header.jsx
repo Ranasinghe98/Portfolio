@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import Logo from "../../img/my-logo.png";
 import gsap from "gsap"
 
-import "./header.css";
-
 function Header(){
 
   useEffect(() => {
