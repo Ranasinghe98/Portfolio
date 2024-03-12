@@ -7,16 +7,12 @@ import webDeveloping from "../../img/developing.png"
 
 const About  = () => {
 
-    // useEffect(() => {
-
-    //     document.title = "About | Dev Roshitha"
-
-    // }, [])
+    useEffect(() => {
+        document.title = "About | Dev Roshitha"
+    }, [])
 
     // gsap.registerPlugin(ScrollTrigger)
-
     // useEffect(() => {
-
     // }, [])
 
     return(<>
