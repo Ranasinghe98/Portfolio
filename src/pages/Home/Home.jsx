@@ -35,8 +35,9 @@ const Home = () => {
         </div>
         <div className="text-container">
           <div className="details-wrapper">
-            <h3>title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, officia vel? Eligendi nesciunt suscipit eos repellendus fuga cum explicabo, distinctio incidunt sunt cupiditate deserunt ducimus quam. Iure, adipisci cumque! Labore!</p>
+          <hr className="title-line"/>
+                <h2 className="light-heading">About <span className="style-word">Me</span></h2>
+                <p>Hello im Roshitha Ranasinghe and i am a frontend web developer and wordpress web web developer at Brandocean (pvt)ltd. And also im degree holder in bachelor of information technology(BIT) Hons at Lincoln university and HDCS(Higher Diploma in Computer Science) holder at Infortec International Asia Campus(IIAC) and . Interested in web application development  using latest web technologies and frameworks (ReactJS, NodeJS, Mongodb, Bootstrap) I hope  to be a mobile application developer using react native framework in my future. Im also passionate about learn new things quickly. build new products by applying software engineering concepts and hunger to work with cutting-edge technologies.</p>
           </div>
         </div>
       </div>
