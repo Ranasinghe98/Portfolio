@@ -7,38 +7,62 @@
     width: 90%;
     margin-left: auto;
   }
+  @include tablet-landscape{
+    flex-direction: row;
+  }
   .image-text-container{
+    @include tablet-landscape{
+      width: 50%;
+    }
     .image-wrapper{
-      min-height: 480px;
+      min-height: 415px;
       .image-inner-wrp{
         position: relative;
         img{
-          width: 100%;
           position: absolute;
           filter: drop-shadow(0px 0px 20px #00000086);
         }
         .first-img{
-          scale: 0.9;
-          right: 5px;
+          width: 200px;
+          top: 20px;
+          left: 35%;
         }
         .second-img{
-          scale: 0.6;
-          top: 75px;
+          top: 124px;
+          width: 160px;
+          left: 55%;
+          z-index: 1;
+        }
+        .title{
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          text-transform: uppercase;
+          font-style: italic;
+          color: #fff;
+          font-size: 2rem;
+          letter-spacing: 1px;
+          filter: drop-shadow(0px 0px 7px #000000);
+          position: absolute;
+          &.first{
+            top: 300px;
+            left: 10%;
+            @include tablet-landscape{
+              left: 7%;
+            }
+          }
+          &.second{
+            top: 350px;
+            z-index: 2;
+            left: 20%;
+          }
+          @include tablet-landscape{
+            font-size: 2.5rem;
+          }
         }
       }
     }
     .text-wrapper{
       padding-inline: 25px;
-      h1{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-style: italic;
-        color: #fff;
-        font-size: 2rem;
-        letter-spacing: 1px;
-        filter: drop-shadow(0px 0px 7px #000000);
-      }
       span{
         margin-top: 20px;
         color: #fff;
@@ -51,5 +75,11 @@
     margin-top: 0px;
     margin-bottom: 115px;
     padding-inline: 25px;
+    @include tablet-portrait{
+      margin-bottom: unset;
+    }
+    @include tablet-landscape{
+      width: 50%;
+    }
   }
 }

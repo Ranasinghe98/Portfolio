@@ -25,10 +25,11 @@ const Home = () => {
             <div className="image-inner-wrp">
               <img className="first-img" src={IMG01} alt="Roshitha Ranasinghe" />
               <img className="second-img" src={IMG02} alt="Roshitha Ranasinghe" />
+              <span className="title first">roshitha</span><br/>
+              <span className="title second">ranasinghe</span>
             </div>
           </div>
           <div className="text-wrapper">
-            <h1>roshitha ranasinghe</h1>
             <span>frontend developer who hunger in javascript and loves coffe</span>
           </div>
         </div>
