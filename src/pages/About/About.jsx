@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import aboutImg from "../../img/about-img.png"
 import webDesign from "../../img/design.png"
 import webDeveloping from "../../img/developing.png"
 //import gsap from "gsap"
@@ -7,30 +6,15 @@ import webDeveloping from "../../img/developing.png"
 
 const About  = () => {
 
-    // useEffect(() => {
-
-    //     document.title = "About | Dev Roshitha"
-
-    // }, [])
+    useEffect(() => {
+        document.title = "About | Dev Roshitha"
+    }, [])
 
     // gsap.registerPlugin(ScrollTrigger)
-
     // useEffect(() => {
-
     // }, [])
 
     return(<>
-        <div className="about-top-section">
-            <div className="abtContent about-left">
-                <hr className="title-line"/>
-                <h2 className="light-heading">About <span className="style-word">Me</span></h2>
-                <p>Hello im Roshitha Ranasinghe and i am a frontend web developer and wordpress web web developer at Brandocean (pvt)ltd. And also im degree holder in bachelor of information technology(BIT) Hons at Lincoln university and HDCS(Higher Diploma in Computer Science) holder at Infortec International Asia Campus(IIAC) and . Interested in web application development  using latest web technologies and frameworks (ReactJS, NodeJS, Mongodb, Bootstrap) I hope  to be a mobile application developer using react native framework in my future. Im also passionate about learn new things quickly. build new products by applying software engineering concepts and hunger to work with cutting-edge technologies.</p>
-            </div>
-            <div className="abtImage about-right">
-                <img src={aboutImg} alt="about" />
-            </div>
-        </div>
-
             <div className="contentTitle titleHead about-wrapper">
                 <hr className="title-line"/>
                 <h2 className="light-heading">I'm <span className="style-word">flexible</span> with these</h2>

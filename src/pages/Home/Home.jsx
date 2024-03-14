@@ -1,77 +1,56 @@
 import React, { useState, useEffect } from "react";
-import sliderInfo from "./sliderInfo";
-import "./slider.css";
-import gsap from "gsap"
+//import gsap from "gsap"
+import IMG01 from '../../img/img-01.png'
+import IMG02 from '../../img/img-02.png'
+import { useTypewriter, Cursor } from "react-simple-typewriter"
 
-const Home = ({slides}) => {
+const Home = () => {
 
-    useEffect(() => {
+  useEffect(() => {
+    document.title = "Portfolio | Dev Roshitha"
+  }, [])
 
-        document.title = "Portfolio | Dev Roshitha"
+  const [typingText] = useTypewriter({
+    words: ["Frontend Developer", "Who Hunger In Javascript", "And Loves Coffe"],
+    loop: {},
+    typeSpeed: 80,
+    deleteSpeed: 20
+  })
 
-    }, [])
+  // useEffect(() => {
+  //   gsap.from(".sliderWrapper", {
+  //       y: 200,
+  //       opacity: 1,
+  //       duration: 2,
+  //       ease: "bounce"
+  //   })
+  // }, [])
 
-    useEffect(() => {
-
-        gsap.from(".sliderWrapper", {
-            y: 200,
-            opacity: 1,
-            duration: 2,
-            ease: "bounce"
-        })
-    }, [])
-
-
-    const [current, setCurrent] = useState(0);
-    const length = slides.length;
-
-    const nextSlide = () => {
-        setCurrent(current === length - 1 ? 0 : current + 1);
-    };
-
-    const prevSlide = () => {
-        setCurrent(current === 0 ? length - 1 : current - 1);
-    };
-
-    if (!Array.isArray(slides) || slides.length <= 0) {
-        return null;
-    }
-
-    return (<>
-    {/* <div className="row"> */}
-        <div className="col-12 col-md-12 col-sm-12 col-xs-12 sliderWrapper">
-            <section className='slider'>
-                    {sliderInfo.map((slide, index) => {
-                        return (
-                            <div className={index === current ? 'slide active' : 'slide'} key={index}>
-
-                                <div className="slideItemWrapper">
-                                    <div className="left-arrow">
-                                        <i className="fa-solid fa-angle-left arrow-left" onClick={prevSlide}></i>
-                                    </div>
-
-                                    {index === current && (
-                                        <div className="slider-caption">
-                                            <h2>{slide.sHeading}</h2>
-                                            <p>{slide.sParagraph}</p>
-                                        </div>
-                                    )}
-
-                                    {index === current && (
-                                        <img src={slide.sImgSrc} alt='roshitha' className='image' />
-                                    )}
-
-                                    <div className="right-arrow">
-                                        <i className="fa-solid fa-angle-right arrow-right" onClick={nextSlide}></i>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    })}
-            </section>
+    return (
+      <div className="main-wrapper">
+        <div className="image-text-container">
+          <div className="image-wrapper">
+            <div className="image-inner-wrp">
+              <img className="first-img" src={IMG01} alt="Roshitha Ranasinghe" />
+              <img className="second-img" src={IMG02} alt="Roshitha Ranasinghe" />
+              <span className="title first">roshitha</span><br/>
+              <span className="title second">ranasinghe</span>
+            </div>
+          </div>
+          <div className="text-wrapper">
+            <span>{typingText}</span>
+            <Cursor cursorColor='#00ffff'/>
+          </div>
         </div>
-    {/* </div> */}
-    </>);
+        <div className="text-container">
+          <div className="details-wrapper">
+          <hr className="title-line"/>
+                <h2 className="light-heading">About <span className="style-word">Me</span></h2>
+                <p>Hello im Roshitha Ranasinghe and i am a frontend web developer and wordpress web web developer at Brandocean (pvt)ltd. And also im degree holder in bachelor of information technology(BIT) Hons at Lincoln university and HDCS(Higher Diploma in Computer Science) holder at Infortec International Asia Campus(IIAC) and . Interested in web application development  using latest web technologies and frameworks (ReactJS, NodeJS, Mongodb, Bootstrap) I hope  to be a mobile application developer using react native framework in my future. Im also passionate about learn new things quickly. build new products by applying software engineering concepts and hunger to work with cutting-edge technologies.</p>
+          </div>
+        </div>
+      </div>
+  );
 }
 
 export default Home;
