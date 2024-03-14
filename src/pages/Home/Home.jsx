@@ -2,12 +2,20 @@ import React, { useState, useEffect } from "react";
 //import gsap from "gsap"
 import IMG01 from '../../img/img-01.png'
 import IMG02 from '../../img/img-02.png'
+import { useTypewriter, Cursor } from "react-simple-typewriter"
 
 const Home = () => {
 
   useEffect(() => {
     document.title = "Portfolio | Dev Roshitha"
   }, [])
+
+  const [typingText] = useTypewriter({
+    words: ["Frontend Developer", "Who Hunger In Javascript", "And Loves Coffe"],
+    loop: {},
+    typeSpeed: 80,
+    deleteSpeed: 20
+  })
 
   // useEffect(() => {
   //   gsap.from(".sliderWrapper", {
@@ -30,7 +38,8 @@ const Home = () => {
             </div>
           </div>
           <div className="text-wrapper">
-            <span>frontend developer who hunger in javascript and loves coffe</span>
+            <span>{typingText}</span>
+            <Cursor cursorColor='#00ffff'/>
           </div>
         </div>
         <div className="text-container">

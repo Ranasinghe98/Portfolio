@@ -75,6 +75,7 @@
     margin-top: 0px;
     margin-bottom: 115px;
     padding-inline: 25px;
+    padding-block-start: 40px;
     @include tablet-portrait{
       margin-bottom: unset;
     }
