@@ -11,7 +11,7 @@ const Home = () => {
   }, [])
 
   const [typingText] = useTypewriter({
-    words: ["Frontend Developer", "Who Hunger In Javascript", "And Loves Coffe"],
+    words: ["Frontend Developer", "Who Hunger In Javascript", "And Loves Coffe ❤️️☕️"],
     loop: {},
     typeSpeed: 80,
     deleteSpeed: 20

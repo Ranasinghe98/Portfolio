@@ -1,0 +1,81 @@
+.top-wrapper{
+  width: 100%;
+  word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  @include tablet-portrait{
+    width: 90%;
+    margin-left: auto;
+  }
+  .edu-header{
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+.accordion-wrapper{
+  display: flex;
+  flex-direction: column;
+  @include tablet-portrait{
+    width: 90%;
+    margin-left: auto;
+    flex-direction: row;
+  }
+  .edu-img-section{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 365px;
+      @include tablet-portrait{
+        width: 400px;
+      }
+      @include tablet-landscape{
+        width: 450px;
+      }
+    }
+  }
+  .edu-content-section{
+    padding-inline: 20px;
+    padding-bottom: 130px;
+    @include tablet-portrait{
+      padding-bottom: unset;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .MuiPaper-root{
+      .MuiButtonBase-root{
+        .MuiAccordionSummary-content{
+          p{
+            font-family: 'Lexend Deca', sans-serif !important;
+            color: #e0e0e0;
+          }
+        }
+      }
+      .MuiCollapse-root{
+        .MuiCollapse-wrapper{
+          .MuiCollapse-wrapperInner{
+            p{
+              font-family: 'Poppins', sans-serif;
+              color: #b0b0b0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Accordion{
+  .AccordionSummary{
+    background: #232323;
+    &:hover{
+      background: #434343;
+    }
+  }
+}
+.AccordionDetails{
+  background: #232323;
+}
+.ExpandMoreIcon{
+  color: #fff;
+}
