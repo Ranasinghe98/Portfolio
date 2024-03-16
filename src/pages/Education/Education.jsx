@@ -5,7 +5,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import eduImg from "../../img/edu.png";
-import "./education.css";
 import eduAccordion from "./eduList";
 import gsap from "gsap"
 
@@ -33,19 +32,19 @@ const Education = () => {
 
     return (
         <>
-            <div className="row">
-                <div className="col-12 edu-header">
-                    <hr />
-                    <h2><span className="style-word">Educational</span> Qualifications</h2>
-                </div>
+            <div className="top-wrapper">
+              <div className="contentTitle titleHead">
+                  <hr className="title-line"/>
+                  <h2 className="light-heading"><span>Educational </span>Qualifications</h2>
+              </div>
             </div>
 
-            <div className="row">
-                <div className="col-md-6 col-lg-6 col-sm-12 edu-img-section">
-                    <img src={eduImg} alt="" />
+            <div className="accordion-wrapper">
+                <div className="edu-img-section">
+                    <img src={eduImg} alt="roshitha ranasinghe" />
                 </div>
 
-                <div className="col-md-6 col-lg-6 col-sm-12 edu-content-section">
+                <div className="edu-content-section">
                 {eduAccordion.map((values)=>{
                         return(
                             <Accordion className="Accordion">

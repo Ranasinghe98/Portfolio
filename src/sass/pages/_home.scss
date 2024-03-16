@@ -62,12 +62,17 @@
       }
     }
     .text-wrapper{
+      margin-block-start: 20px;
       padding-inline: 25px;
       span{
         margin-top: 20px;
         color: #fff;
         font-family: 'Poppins', sans-serif;
         text-transform: capitalize;
+        font-size: 20px;
+        @include tablet-portrait{
+          font-size: 22px;
+        }
       }
     }
   }
