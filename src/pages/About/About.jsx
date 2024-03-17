@@ -68,7 +68,7 @@ const About  = () => {
                     <div className="text-box left-box">
                         <h3 className="box-title">Ebeyonds(Pvt)Ltd</h3>
                         <small className="date">2023 - Present</small>
-                        <p className="description"> I’ve joined as an associate web and gained experience in front-end development with HTML SASS javascript and trained to create reusable components using pure HTML and CSS for their web projects.
+                        <p className="description"> I’ve joined as an associate web developer and gained experience in front-end development with HTML SASS javascript and trained to create reusable components using pure HTML and CSS for their web projects.
                         </p>
                     </div>
                 </div>
