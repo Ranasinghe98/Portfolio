@@ -6,29 +6,13 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import eduImg from "../../img/edu.png";
 import eduAccordion from "./eduList";
-import gsap from "gsap"
+//import gsap from "gsap"
 
 const Education = () => {
 
     useEffect(() => {
-
-        document.title = "Education | Dev Roshitha"
-
+      document.title = "Education | Dev Roshitha"
     }, [])
-
-    useEffect(() => {
-        gsap.from('.edu-img-section', {
-            duration: 1.5,
-            x: -100,
-            ease: "bounce"
-        })
-
-        gsap.from('.edu-content-section', {
-            duration: 1.5,
-            x: 100,
-            ease: "bounce"
-        })
-    },[])
 
     return (
         <>
