@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-//import gsap from "gsap"
+import gsap from "gsap"
 import IMG01 from '../../img/img-01.webp'
 import IMG02 from '../../img/img-02.webp'
 import { useTypewriter, Cursor } from "react-simple-typewriter"
@@ -17,14 +17,21 @@ const Home = () => {
     deleteSpeed: 20
   })
 
-  // useEffect(() => {
-  //   gsap.from(".sliderWrapper", {
-  //       y: 200,
-  //       opacity: 1,
-  //       duration: 2,
-  //       ease: "bounce"
-  //   })
-  // }, [])
+  useEffect(() => {
+    gsap.from(".first-img", {
+      x: 200,
+      opacity: 0,
+      duration: 1.5,
+      ease: "bounce"
+    })
+
+    gsap.from(".second-img", {
+      x: -200,
+      opacity: 0,
+      duration: 1.5,
+      ease: "bounce"
+  })
+  }, [])
 
     return (
       <div className="main-wrapper">
