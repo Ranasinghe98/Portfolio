@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 //import gsap from "gsap"
-import IMG01 from '../../img/img-01.png'
-import IMG02 from '../../img/img-02.png'
+import IMG01 from '../../img/img-01.webp'
+import IMG02 from '../../img/img-02.webp'
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 
 const Home = () => {
