@@ -44,7 +44,7 @@ const About  = () => {
                     <div className="text-box left-box">
                         <h3 className="box-title">BrandOcean(Pvt)Ltd</h3>
                         <small className="date">2021 - 2022</small>
-                        <p className="description">(01 year 06 month) – Have strong experience in WordPress web
+                        <p className="description">(01 year) – Have strong experience in WordPress web
                             design and development (including one e-commerce website
                             with Elementor page builder) Designed and developed
                             responsive websites using WordPress and Elementor page
@@ -67,11 +67,8 @@ const About  = () => {
                 <div className="container left-container">
                     <div className="text-box left-box">
                         <h3 className="box-title">Ebeyonds(Pvt)Ltd</h3>
-                        <small>2023 - Present</small>
-                        <p className="description"> I’ve joined as associate web and
-                            gained my experience in front-end development with HTML SASS
-                            javascript and trained to create re-usable components on their
-                            web projects.
+                        <small className="date">2023 - Present</small>
+                        <p className="description"> I’ve joined as an associate web and gained experience in front-end development with HTML SASS javascript and trained to create reusable components using pure HTML and CSS for their web projects.
                         </p>
                     </div>
                 </div>
