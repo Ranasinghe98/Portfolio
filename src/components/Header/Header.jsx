@@ -22,7 +22,7 @@ function Header(){
 
   return(
     <header className="header">
-      <img alt="logo" src={Logo} className="header-logo" />
+      <img alt="logo" src={Logo} className="header-logo" fetchpriority="high"/>
     </header>
     )
 }

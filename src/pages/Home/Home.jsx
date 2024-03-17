@@ -31,8 +31,8 @@ const Home = () => {
         <div className="image-text-container">
           <div className="image-wrapper">
             <div className="image-inner-wrp">
-              <img className="first-img" src={IMG01} alt="Roshitha Ranasinghe" />
-              <img className="second-img" src={IMG02} alt="Roshitha Ranasinghe" />
+              <img className="first-img" src={IMG01} alt="Roshitha Ranasinghe" fetchpriority="high"/>
+              <img className="second-img" src={IMG02} alt="Roshitha Ranasinghe" fetchpriority="high"/>
               <span className="title first">roshitha</span><br/>
               <span className="title second">ranasinghe</span>
             </div>

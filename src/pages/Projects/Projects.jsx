@@ -38,7 +38,7 @@ const Projects = () => {
                 {projectsInfo.map((values)=>{
                     return(
                         <div className="project-box pro-box">
-                            <img className="box-img" src={values.imgSrc} alt={values.altText}/>
+                            <img className="box-img" src={values.imgSrc} alt={values.altText} fetchpriority="high"/>
                             <h3>{values.title}</h3>
                             <p>{values.content}</p>
                             <a href={values.link} target="_blank" rel="noopener noreferrer">
