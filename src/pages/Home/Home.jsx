@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import gsap from "gsap"
+import {ScrollTrigger} from "gsap/ScrollTrigger"
 import IMG01 from '../../img/img-01.webp'
 import IMG02 from '../../img/img-02.webp'
 import { useTypewriter, Cursor } from "react-simple-typewriter"
+gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
 
@@ -31,6 +33,41 @@ const Home = () => {
       duration: 1.5,
       ease: "bounce"
   })
+
+  gsap.to(".first", {
+    x: 50,
+    duration: 8,
+    scrollTrigger: {
+      trigger: '.first',
+      start: 'top 30%',
+      end: 'top 30%',
+      scrub: true,
+      markers: true
+    }
+  });
+
+  gsap.to(".second", {
+    x: -50,
+    duration: 8,
+    scrollTrigger: {
+      trigger: '.second',
+      start: 'top 80%',
+      end: 'top 30%',
+      scrub: true,
+    }
+  });
+
+  gsap.to(".first-img", {
+    x: -50,
+    duration: 8,
+    scrollTrigger: {
+      trigger: '.first-img',
+      start: 'top 80%',
+      end: 'top 30%',
+      scrub: true,
+    }
+  });
+
   }, [])
 
     return (

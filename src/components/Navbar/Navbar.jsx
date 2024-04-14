@@ -1,8 +1,10 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
 import gsap from "gsap"
 
 const Navbar = () => {
+
+  const [className, setClassName] = useState("")
 
   useEffect(() => {
   gsap.from(".navigation", {
@@ -13,18 +15,20 @@ const Navbar = () => {
   })
   }, [])
 
-  function addStyle(){
-    const navDiv = document.querySelector('.navigation');
-    navDiv.classList.add('span-nav');
-  }
+  useEffect(() => {
+    const handleMouseOver = () => {
+      setClassName('span-nav')
+    }
+    const handleMouseOut = () => {
+      setClassName('')
+    }
+    document.querySelector('.navigation').addEventListener("mouseover", handleMouseOver);
+    document.querySelector('.navigation').addEventListener("mouseout", handleMouseOut);
 
-  function removeStyle(){
-    const navDiv = document.querySelector('.navigation');
-    navDiv.classList.remove('span-nav');
-  }
+    }, [])
 
   return(<>
-      <div className="navigation" id="naviSpan" onMouseOver={addStyle} onMouseOut={removeStyle}>
+      <div className={`navigation ${className}`} id="naviSpan">
         <div className="inner-navigation">
           <ul className="links">
             <li className="link">
