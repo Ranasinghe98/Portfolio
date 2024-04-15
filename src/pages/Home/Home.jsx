@@ -42,7 +42,6 @@ const Home = () => {
       start: 'top 30%',
       end: 'top 30%',
       scrub: true,
-      markers: true
     }
   });
 
