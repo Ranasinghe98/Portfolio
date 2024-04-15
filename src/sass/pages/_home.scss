@@ -9,6 +9,7 @@
   }
   @include tablet-landscape{
     flex-direction: row;
+    margin-block: 7%;
   }
   .image-text-container{
     @include tablet-landscape{
