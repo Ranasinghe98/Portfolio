@@ -67,11 +67,25 @@ const Home = () => {
     }
   });
 
+  let str = "roshitha ranasinghe - frontend developer -"
+  let text = document.getElementById('circle')
+  for(let i = 0; i < str.length; i++){
+    let spanTag = document.createElement("span")
+    spanTag.innerHTML = str[i]
+    text.appendChild(spanTag)
+    spanTag.style.transform = `rotate(${8.5*i}deg)`
+  }
   }, [])
+
 
     return (
       <div className="main-wrapper">
         <div className="image-text-container">
+          {/* <div className="circle-text">
+            <div className="circle-inner"> */}
+              <p className="cText" id="circle"></p>
+            {/* </div>
+          </div> */}
           <div className="image-wrapper">
             <div className="image-inner-wrp">
               <img className="first-img" src={IMG01} alt="Roshitha Ranasinghe" fetchpriority="high"/>

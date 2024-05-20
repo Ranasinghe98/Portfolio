@@ -6,7 +6,7 @@ import webDeveloping from "../../img/developing.png"
 
 const About  = () => {
 
-    useEffect(() => {
+    useEffect(() => { 
         document.title = "About | Dev Roshitha"
     }, [])
 

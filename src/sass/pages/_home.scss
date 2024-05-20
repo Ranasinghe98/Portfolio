@@ -78,6 +78,32 @@
         }
       }
     }
+    .cText{
+      top: 20%;
+      left: 35%;
+      color: #fff;
+      width: 220px;
+      height: 220px;
+      position: absolute;
+      animation: effect 10s linear infinite;
+      @keyframes effect {
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+      span{
+        left: 50%;
+        position: absolute;
+        transform-origin: 0 110px;
+        text-transform: uppercase;
+        transform-style: flat;
+        font-weight: 600;
+        font-size: 16px
+      }
+    }
   }
   .text-container{
     margin-top: 0px;
