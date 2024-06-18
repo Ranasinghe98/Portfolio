@@ -81,11 +81,7 @@ const Home = () => {
     return (
       <div className="main-wrapper">
         <div className="image-text-container">
-          {/* <div className="circle-text">
-            <div className="circle-inner"> */}
               <p className="cText" id="circle"></p>
-            {/* </div>
-          </div> */}
           <div className="image-wrapper">
             <div className="image-inner-wrp">
               <img className="first-img" src={IMG01} alt="Roshitha Ranasinghe" fetchpriority="high"/>

@@ -74,7 +74,11 @@
             border-radius: 10px;
           }
           i{
-            font-size: 1.3rem;
+            width: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
           }
           .spanList{
             padding-left: 15px;
