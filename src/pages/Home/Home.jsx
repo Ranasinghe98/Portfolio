@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from "react";
 import gsap from "gsap"
-import {ScrollTrigger} from "gsap/ScrollTrigger"
+import {ScrollTrigger} from "gsap-trial/ScrollTrigger"
 import IMG01 from '../../img/img-01.webp'
 import IMG02 from '../../img/img-02.webp'
 import { useTypewriter, Cursor } from "react-simple-typewriter"
-gsap.registerPlugin(ScrollTrigger);
+import { ScrollSmoother } from "gsap-trial/ScrollSmoother"
+import Lenis from 'lenis'
+//import { scrollTrigger } from "gsap-trial/scrollTrigger";
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+ScrollTrigger.normalizeScroll(true)
+
+
 
 const Home = () => {
 
@@ -20,66 +27,86 @@ const Home = () => {
   })
 
   useEffect(() => {
-    gsap.from(".first-img", {
-      x: 200,
-      opacity: 0,
-      duration: 1.5,
-      ease: "bounce"
+
+    let timeLine = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.first',
+        start: 'top 80%',
+        end: 'top 30%',
+        scrub: true,
+        markers: true
+      }
+    })
+    
+    // gsap.from(".first-img", {
+    //   x: 200,
+    //   opacity: 0,
+    //   duration: 1.5,
+    //   ease: "bounce"
+    // })
+
+    // gsap.from(".second-img", {
+    //   x: -200,
+    //   opacity: 0,
+    //   duration: 1.5,
+    //   ease: "bounce"
+    // })
+
+    timeLine.to(".first", {
+      //duration: 0.5,
+      scale: 1.5
+    });
+
+    timeLine.from('.second', {
+      x: 50,
     })
 
-    gsap.from(".second-img", {
-      x: -200,
-      opacity: 0,
-      duration: 1.5,
-      ease: "bounce"
-  })
+    // gsap.from(".second", {
+    //   scale: 1,
+    //   duration: 10,
+    //   scrollTrigger: {
+    //     trigger: '.second',
+    //     start: 'top 80%',
+    //     end: 'top 30%',
+    //     scrub: true,
+    //     markers: true
+    //   }
+    // });
 
-  gsap.to(".first", {
-    x: 50,
-    duration: 8,
-    scrollTrigger: {
-      trigger: '.first',
-      start: 'top 30%',
-      end: 'top 30%',
-      scrub: true,
+    // gsap.to(".first-img", {
+    //   x: -50,
+    //   duration: 8,
+    //   scrollTrigger: {
+    //     trigger: '.first-img',
+    //     start: 'top 80%',
+    //     end: 'top 30%',
+    //     scrub: true,
+    //   }
+    // });
+
+    let str = "roshitha ranasinghe - frontend developer -"
+    let text = document.getElementById('circle')
+    for(let i = 0; i < str.length; i++){
+      let spanTag = document.createElement("span")
+      spanTag.innerHTML = str[i]
+      text.appendChild(spanTag)
+      spanTag.style.transform = `rotate(${8.5*i}deg)`
     }
-  });
 
-  gsap.to(".second", {
-    x: -50,
-    duration: 8,
-    scrollTrigger: {
-      trigger: '.second',
-      start: 'top 80%',
-      end: 'top 30%',
-      scrub: true,
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
     }
-  });
+    
+    requestAnimationFrame(raf)
 
-  gsap.to(".first-img", {
-    x: -50,
-    duration: 8,
-    scrollTrigger: {
-      trigger: '.first-img',
-      start: 'top 80%',
-      end: 'top 30%',
-      scrub: true,
-    }
-  });
-
-  let str = "roshitha ranasinghe - frontend developer -"
-  let text = document.getElementById('circle')
-  for(let i = 0; i < str.length; i++){
-    let spanTag = document.createElement("span")
-    spanTag.innerHTML = str[i]
-    text.appendChild(spanTag)
-    spanTag.style.transform = `rotate(${8.5*i}deg)`
-  }
   }, [])
 
 
     return (
-      <div className="main-wrapper">
+      <section className="main-wrapper" id="home">
         <div className="image-text-container">
               <p className="cText" id="circle"></p>
           <div className="image-wrapper">
@@ -102,7 +129,7 @@ const Home = () => {
                 <p>Hello im Roshitha Ranasinghe and i am a frontend developer. And also im a degree holder in bachelor of information technology(BIT) Hons at Lincoln university and HDCS(Higher Diploma in Computer Science) holder at Infortec International Asia Campus(IIAC) and . Interested in web application development  using latest web technologies and frameworks (ReactJS, NodeJS, Mongodb, Bootstrap) I hope  to be a mobile application developer in my future. Im also passionate about learn new things quickly. build new products by applying software engineering concepts and hunger to work with cutting-edge technologies.</p>
           </div>
         </div>
-      </div>
+      </section>
   );
 }
 

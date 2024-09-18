@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { NavLink } from "react-router-dom"
+//import { NavLink } from "react-router-dom"
 import gsap from "gsap"
 
 const Navbar = () => {
@@ -32,28 +32,28 @@ const Navbar = () => {
         <div className="inner-navigation">
           <ul className="links">
             <li className="link">
-              <NavLink to="/dev.roshitha" className="listItems">
+              <a href="#home" className="listItems">
                 <i className="fa-solid fa-house"></i>
                 <span className="spanList">Home</span>
-              </NavLink>
+              </a>
             </li>
             <li className="link">
-              <NavLink to="/about" className="listItems">
+              <a href="#about" className="listItems">
                 <i className="fa-solid fa-circle-info"></i>
                 <span className="spanList">About</span>
-              </NavLink>
+              </a>
             </li>
             <li className="link">
-              <NavLink to="/education" className="listItems">
+              <a href="#education" className="listItems">
                 <i className="fa-solid fa-graduation-cap"></i>
                 <span className="spanList">Education</span>
-              </NavLink>
+              </a>
             </li>
             <li className="link">
-              <NavLink to="/projects" className="listItems">
+              <a href="#projects" className="listItems">
                 <i className="fa-solid fa-file-code"></i>
                 <span className="spanList">Projects</span>
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>
