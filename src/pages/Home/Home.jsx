@@ -8,6 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
 
+  console.log("console log from sub-one with")
+  console.log("-- sstwo branch")
   console.log("console log from sub-one with --")
 
   useEffect(() => {
