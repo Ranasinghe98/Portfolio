@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
 
-  console.log("console log from sub-one with")
+  console.log("console log from sub-one with --")
 
   useEffect(() => {
     document.title = "Portfolio | Dev Roshitha"
