@@ -8,6 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
 
+  console.log("Console log from sub-one branch")
+
   useEffect(() => {
     document.title = "Portfolio | Dev Roshitha"
   }, [])
