@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
 
-  console.log("console log from sub-two branch")
+  console.log("console log from sub-two branch with another change two")
   console.log("Console log from sub-one branch with another change one")
 
   useEffect(() => {
