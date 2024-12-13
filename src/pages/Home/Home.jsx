@@ -9,7 +9,7 @@ import Lenis from 'lenis'
 //import { scrollTrigger } from "gsap-trial/scrollTrigger";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-ScrollTrigger.normalizeScroll(true)
+//ScrollTrigger.normalizeScroll(true)
 
 
 
@@ -17,6 +17,9 @@ const Home = () => {
 
   useEffect(() => {
     document.title = "Portfolio | Dev Roshitha"
+
+
+    
   }, [])
 
   const [typingText] = useTypewriter({
@@ -93,14 +96,14 @@ const Home = () => {
       spanTag.style.transform = `rotate(${8.5*i}deg)`
     }
 
-    const lenis = new Lenis()
+    // const lenis = new Lenis()
 
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
+    // function raf(time) {
+    //   lenis.raf(time)
+    //   requestAnimationFrame(raf)
+    // }
     
-    requestAnimationFrame(raf)
+    // requestAnimationFrame(raf)
 
   }, [])
 
