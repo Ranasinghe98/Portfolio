@@ -1,17 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap"
-import {ScrollTrigger} from "gsap-trial/ScrollTrigger"
 import IMG01 from '../../img/img-01.webp'
 import IMG02 from '../../img/img-02.webp'
 import { useTypewriter, Cursor } from "react-simple-typewriter"
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother"
-import Lenis from 'lenis'
-//import { scrollTrigger } from "gsap-trial/scrollTrigger";
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-//ScrollTrigger.normalizeScroll(true)
-
-
 
 const Home = () => {
 
@@ -31,61 +22,19 @@ const Home = () => {
 
   useEffect(() => {
 
-    let timeLine = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.first',
-        start: 'top 80%',
-        end: 'top 30%',
-        scrub: true,
-        markers: true
-      }
-    })
-    
-    // gsap.from(".first-img", {
-    //   x: 200,
-    //   opacity: 0,
-    //   duration: 1.5,
-    //   ease: "bounce"
-    // })
-
-    // gsap.from(".second-img", {
-    //   x: -200,
-    //   opacity: 0,
-    //   duration: 1.5,
-    //   ease: "bounce"
-    // })
-
-    timeLine.to(".first", {
-      //duration: 0.5,
-      scale: 1.5
-    });
-
-    timeLine.from('.second', {
-      x: 50,
+    gsap.from(".first-img", {
+      x: 200,
+      opacity: 0,
+      duration: 1.5,
+      ease: "bounce"
     })
 
-    // gsap.from(".second", {
-    //   scale: 1,
-    //   duration: 10,
-    //   scrollTrigger: {
-    //     trigger: '.second',
-    //     start: 'top 80%',
-    //     end: 'top 30%',
-    //     scrub: true,
-    //     markers: true
-    //   }
-    // });
-
-    // gsap.to(".first-img", {
-    //   x: -50,
-    //   duration: 8,
-    //   scrollTrigger: {
-    //     trigger: '.first-img',
-    //     start: 'top 80%',
-    //     end: 'top 30%',
-    //     scrub: true,
-    //   }
-    // });
+    gsap.from(".second-img", {
+      x: -200,
+      opacity: 0,
+      duration: 1.5,
+      ease: "bounce"
+    })
 
     let str = "roshitha ranasinghe - frontend developer -"
     let text = document.getElementById('circle')
@@ -95,15 +44,6 @@ const Home = () => {
       text.appendChild(spanTag)
       spanTag.style.transform = `rotate(${8.5*i}deg)`
     }
-
-    // const lenis = new Lenis()
-
-    // function raf(time) {
-    //   lenis.raf(time)
-    //   requestAnimationFrame(raf)
-    // }
-    
-    // requestAnimationFrame(raf)
 
   }, [])
 
